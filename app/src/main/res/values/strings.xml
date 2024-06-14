@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Kotlin5-6_online</string>
+    <string name="enter_about_yourself">Enter about yourself</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_number">Enter your number</string>
+    <string name="number">Number</string>
+    <string name="division">/</string>
+    <string name="multiple">*</string>
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+    <string name="dca">DCA</string>
+    <string name="mars">Mars</string>
+    <string name="flights">Flights</string>
+    <string name="switch_text">Switch</string>
+    <string name="open_website">Open Website</string>
+    <string name="dial_number">Dial Number</string>
+</resources>
