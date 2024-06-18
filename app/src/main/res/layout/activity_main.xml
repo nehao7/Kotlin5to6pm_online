@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,29 +7,53 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/ivArrow"
-        android:elevation="@dimen/dp_10"
-        android:src="@drawable/baseline_compare_arrows_24"
-        android:layout_centerInParent="true"/>
-
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/dca"
-        android:id="@+id/tvDca"
-        android:background="#03A9F4"
-        android:layout_marginRight="-20dp"
-        android:padding="@dimen/dp_50"
-        android:layout_centerVertical="true"
-        android:layout_toLeftOf="@id/ivArrow"/>
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="20dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/ivArrow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:elevation="@dimen/dp_10"
+                android:src="@drawable/baseline_compare_arrows_24"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dca"
+                android:id="@+id/tvDca"
+                app:layout_constraintTop_toBottomOf="@+id/ivArrow"
+                android:background="#03A9F4"
+                android:layout_marginRight="-20dp"
+                android:padding="@dimen/dp_50"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/ivArrow"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/mars"
+        app:layout_constraintTop_toBottomOf="@+id/ivArrow"
         android:layout_marginLeft="-20dp"
         android:padding="@dimen/dp_50"
         android:background="#03A9F4"
@@ -40,6 +64,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvFlights"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_centerHorizontal="true"
         android:text="@string/flights"
         android:layout_margin="@dimen/dp_10"
@@ -50,6 +77,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tvSpaceStation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:text="@string/flights"
         android:layout_margin="10dp"
         android:layout_above="@id/tvDca"
@@ -60,13 +90,17 @@
     <com.google.android.material.materialswitch.MaterialSwitch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tvFlights"
+        app:layout_constraintStart_toStartOf="parent"
         android:text="@string/switch_text"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@+id/tvSpaceStation"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_alignParentEnd="true"
         />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

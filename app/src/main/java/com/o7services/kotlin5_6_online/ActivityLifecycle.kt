@@ -34,7 +34,7 @@ class ActivityLifecycle : AppCompatActivity() {
         btn2=findViewById(R.id.btnImplicit2)
         btn2?.setOnClickListener {
             var intent = Intent(Intent.ACTION_DIAL)
-                intent.setData(Uri.parse("tel:9492924601"))
+            intent.setData(Uri.parse("tel:9492924601"))
                 startActivity(intent)
         }
     }
