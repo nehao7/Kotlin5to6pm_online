@@ -14,4 +14,5 @@
     <string name="switch_text">Switch</string>
     <string name="open_website">Open Website</string>
     <string name="dial_number">Dial Number</string>
+    <string name="add_string">Add</string>
 </resources>

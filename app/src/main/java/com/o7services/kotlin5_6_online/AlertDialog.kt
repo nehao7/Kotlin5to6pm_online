@@ -13,6 +13,8 @@ import com.o7services.kotlin5_6_online.databinding.ActivityAlertDialogBinding
 
 class AlertDialog : AppCompatActivity() {
     lateinit var binding:ActivityAlertDialogBinding
+    val animals = arrayOf("Horse", "Cow", "Camel", "Sheep", "Goat")
+    val checkedItems = booleanArrayOf(true, false, false, true, false,true)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,7 +46,11 @@ class AlertDialog : AppCompatActivity() {
                 setCancelable(false)
                 show()
             }
+
+
         }
+
+       
 
     }
 }
