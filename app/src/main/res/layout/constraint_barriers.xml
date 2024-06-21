@@ -55,7 +55,7 @@
         android:layout_height="100dp"
         android:background="@color/green"
         android:id="@+id/viewFirst"
-        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintEnd_toStartOf="@id/viewSecond"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
