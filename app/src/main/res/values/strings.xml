@@ -16,4 +16,9 @@
     <string name="dial_number">Dial Number</string>
     <string name="add_string">Add</string>
     <string name="enter_value">Enter Value</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">ok</string>
 </resources>

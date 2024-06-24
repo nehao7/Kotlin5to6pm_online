@@ -16,4 +16,10 @@
         android:text="Constraint Layout"
         />
 
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment"
+        android:name="com.o7services.kotlin5_6_online.Fragment1"/>
+
    </LinearLayout>
