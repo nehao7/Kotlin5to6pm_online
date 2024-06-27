@@ -3,11 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:id="@+id/llfragment"
-    tools:context=".InteractionFragment">
+    tools:context=".activity_fragmnent_interaction.InteractionFragment">
 
     <Button
         android:id="@+id/btnchgText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Change Text" />
+    <Button
+        android:id="@+id/btnDatePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

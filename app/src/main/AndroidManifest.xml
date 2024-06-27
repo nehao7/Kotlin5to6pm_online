@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Kotlin56_online"
         tools:targetApi="31">
         <activity
-            android:name=".ActivityInteraction"
+            android:name=".activity_fragmnent_interaction.ActivityInteraction"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

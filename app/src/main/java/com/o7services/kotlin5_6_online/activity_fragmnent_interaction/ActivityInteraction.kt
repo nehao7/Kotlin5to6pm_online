@@ -1,15 +1,16 @@
-package com.o7services.kotlin5_6_online
+package com.o7services.kotlin5_6_online.activity_fragmnent_interaction
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.o7services.kotlin5_6_online.R
 import com.o7services.kotlin5_6_online.databinding.ActivityInteractionBinding
 
 class ActivityInteraction : AppCompatActivity() {
     lateinit var binding: ActivityInteractionBinding
-    var myInterface:MyInterface?=null
+    var myInterface: MyInterface?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -24,6 +25,7 @@ class ActivityInteraction : AppCompatActivity() {
         binding.btnChangeColor.setOnClickListener {
             myInterface?.changecolor()
         }
+
     }
 
     fun changetext(){

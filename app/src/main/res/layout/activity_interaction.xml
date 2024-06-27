@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityInteraction">
+    tools:context=".activity_fragmnent_interaction.ActivityInteraction">
 
     <Button
         android:id="@+id/btnChangeColor"
@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/fragment"
-        android:name="com.o7services.kotlin5_6_online.InteractionFragment"
+        android:name="com.o7services.kotlin5_6_online.activity_fragmnent_interaction.InteractionFragment"
         />
 
 </LinearLayout>
