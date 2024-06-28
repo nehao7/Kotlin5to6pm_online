@@ -8,18 +8,45 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <Button
         android:id="@+id/btnConstraint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Constraint Layout"
+        android:text="@string/constraint_layout"
+        />
+    <Button
+        android:id="@+id/btnActivityLifecyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/activity_lifecyle"
+        />
+    <Button
+        android:id="@+id/btnAlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/alert_dialog"
         />
 
-    <androidx.fragment.app.FragmentContainerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/fragment"
-        android:name="com.o7services.kotlin5_6_online.Fragment1"/>
+    <Button
+        android:id="@+id/btnInterfaceInteraction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/interface_interaction"
+        />
 
-   </LinearLayout>
+  <Button
+        android:id="@+id/btnJetPack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="JetPack Navigation"
+        />
+
+
+
+       </LinearLayout>

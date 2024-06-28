@@ -21,4 +21,10 @@
     <string name="title">Title</string>
     <string name="cancel">Cancel</string>
     <string name="ok">ok</string>
+    <string name="alert_dialog">Alert Dialog</string>
+    <string name="interface_interaction">Interface Interaction</string>
+    <string name="activity_lifecyle">Activity Lifecyle</string>
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="move">Move</string>
+    <string name="second_fragment">Second Fragment</string>
 </resources>

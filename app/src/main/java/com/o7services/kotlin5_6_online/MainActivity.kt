@@ -6,7 +6,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.o7services.kotlin5_6_online.activity_fragmnent_interaction.ActivityInteraction
 import com.o7services.kotlin5_6_online.databinding.ActivityMainBinding
+import com.o7services.kotlin5_6_online.jetpacck_naigation.JetpackActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -23,6 +25,19 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnConstraint.setOnClickListener {
             startActivity(Intent(this,ConstraintActivity::class.java))
+        }
+
+        binding.btnAlertDialog.setOnClickListener {
+            startActivity(Intent(this,AlertDialog::class.java))
+        }
+        binding.btnActivityLifecyle.setOnClickListener {
+            startActivity(Intent(this,ActivityLifecycle::class.java))
+        }
+        binding.btnInterfaceInteraction.setOnClickListener {
+            startActivity(Intent(this,ActivityInteraction::class.java))
+        }
+        binding.btnJetPack.setOnClickListener {
+            startActivity(Intent(this,JetpackActivity::class.java))
         }
     }
 }
