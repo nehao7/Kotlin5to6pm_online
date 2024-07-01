@@ -2,10 +2,14 @@ package com.o7services.kotlin5_6_online
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.snackbar.Snackbar
 import com.o7services.kotlin5_6_online.activity_fragmnent_interaction.ActivityInteraction
 import com.o7services.kotlin5_6_online.databinding.ActivityMainBinding
 import com.o7services.kotlin5_6_online.jetpacck_naigation.JetpackActivity
@@ -39,5 +43,26 @@ class MainActivity : AppCompatActivity() {
         binding.btnJetPack.setOnClickListener {
             startActivity(Intent(this,JetpackActivity::class.java))
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.menu_layout,menu)
+        return super.onCreateOptionsMenu(menu)
+
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+
+            R.id.item_toast->{
+                Toast.makeText(this, "this is menu toast", Toast.LENGTH_SHORT).show()
+            }
+            R.id.item_snackbar->binding.root.let{
+                Snackbar.make(it,"this is menu snackbar", Snackbar.LENGTH_SHORT).show()
+            }
+
+        }
+        return super.onOptionsItemSelected(item)
+
     }
 }

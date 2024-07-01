@@ -21,6 +21,7 @@ private const val ARG_PARAM2 = "param2"
  */
 class JetpackFragment1 : Fragment() {
     lateinit var binding:FragmentJetpack1Binding
+    lateinit var jetpackActivity: JetpackActivity
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -31,6 +32,7 @@ class JetpackFragment1 : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+        jetpackActivity=activity as JetpackActivity
     }
 
     override fun onCreateView(
@@ -44,6 +46,7 @@ class JetpackFragment1 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        jetpackActivity.supportActionBar?.title="Jetpack Fragment 1"
         binding.btnMove.setOnClickListener {
             var bundle=Bundle()
             bundle.putString("value","this is from fragment 1")
