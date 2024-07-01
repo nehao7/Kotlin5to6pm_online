@@ -1,16 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".jetpacck_naigation.JetpackFragment2">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/second_fragment"
         android:textSize="@dimen/sp_30"
         />
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/move_to_first"
+        android:textSize="@dimen/sp_30"
+        />
+    <Button
+        android:id="@+id/btnmove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Move to Third"
+        android:textSize="@dimen/sp_30"
+        />
 
-</FrameLayout>
+</LinearLayout>

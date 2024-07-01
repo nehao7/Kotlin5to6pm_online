@@ -45,7 +45,10 @@ class JetpackFragment1 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnMove.setOnClickListener {
-            findNavController().navigate(R.id.jetpackFragment2)
+            var bundle=Bundle()
+            bundle.putString("value","this is from fragment 1")
+            bundle.putString("name","Rahul")
+            findNavController().navigate(R.id.action_jetpackFragment1_to_jetpackFragment2,bundle)
         }
     }
 

@@ -9,10 +9,25 @@
         android:id="@+id/jetpackFragment1"
         android:name="com.o7services.kotlin5_6_online.jetpacck_naigation.JetpackFragment1"
         android:label="fragment_jetpack1"
-        tools:layout="@layout/fragment_jetpack1" />
+        tools:layout="@layout/fragment_jetpack1" >
+        <action
+            android:id="@+id/action_jetpackFragment1_to_jetpackFragment2"
+            app:destination="@id/jetpackFragment2"
+            />
+    </fragment>
     <fragment
         android:id="@+id/jetpackFragment2"
         android:name="com.o7services.kotlin5_6_online.jetpacck_naigation.JetpackFragment2"
         android:label="fragment_jetpack2"
-        tools:layout="@layout/fragment_jetpack2" />
+        tools:layout="@layout/fragment_jetpack2" >
+        <action
+            android:id="@+id/action_jetpackFragment2_to_jetpackFragment33"
+            app:destination="@id/jetpackFragment3"
+            app:popUpTo="@id/jetpackFragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/jetpackFragment3"
+        android:name="com.o7services.kotlin5_6_online.jetpacck_naigation.JetpackFragment3"
+        android:label="fragment_jetpack3"
+        tools:layout="@layout/fragment_jetpack3" />
 </navigation>
